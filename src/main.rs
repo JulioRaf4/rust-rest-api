@@ -34,8 +34,6 @@ fn main() {
     }
 }
 
-use crate::controllers::{handle_post_request, handle_get_request, handle_get_all_request, handle_put_request, handle_delete_request};
-
 // Função que escolhe o manipulador com base na requisição
 pub fn get_route_handler(request: &str) -> (String, String) {
     match &*request {
